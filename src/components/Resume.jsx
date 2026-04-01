@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Mail, ExternalLink, Download, X } from 'lucide-react';
+import { MapPin, Mail, ExternalLink, Download, X, Facebook, Github } from 'lucide-react';
 
 const ResumeContent = ({ profileMain, fallbackProfile }) => (
   <div className="w-full h-full p-8 sm:p-12 bg-white text-slate-900 box-border text-left flex flex-col font-sans min-h-[297mm]">
@@ -8,10 +8,11 @@ const ResumeContent = ({ profileMain, fallbackProfile }) => (
       <div className="flex-1 pr-6">
         <h1 className="text-4xl font-bold text-blue-800 tracking-tight uppercase mb-1">MD SIAM</h1>
         <h2 className="text-lg font-semibold text-slate-600 uppercase tracking-widest mb-4">Senior WordPress Expert</h2>
-        <div className="text-sm text-slate-600 space-y-1.5 font-medium">
-           <p className="flex items-center gap-2"><MapPin size={16} className="text-blue-500"/> Mymensingh, Bangladesh (Worldwide Remote)</p>
+        <div className="text-sm text-slate-600 space-y-1.5 font-medium grid grid-cols-1 sm:grid-cols-2 gap-x-4">
+           <p className="flex items-center gap-2"><MapPin size={16} className="text-blue-500"/> Mymensingh, Bangladesh</p>
            <p className="flex items-center gap-2"><Mail size={16} className="text-blue-500"/> siam2007net@gmail.com</p>
-           <p className="flex items-center gap-2"><ExternalLink size={16} className="text-blue-500"/> buraqwebservice.com</p>
+           <p className="flex items-center gap-2"><Github size={16} className="text-blue-500"/> github.com/siamdev1</p>
+           <p className="flex items-center gap-2"><Facebook size={16} className="text-blue-500"/> fb.com/mdsiam2007</p>
         </div>
       </div>
       <div className="w-32 h-32 rounded-xl overflow-hidden border-4 border-white shadow-lg shrink-0 bg-slate-100 relative">

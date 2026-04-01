@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, Download } from 'lucide-react';
+import { ChevronRight, Download, Facebook, Github } from 'lucide-react';
 
 const Hero = ({ profileMain, fallbackProfile, setIsContactModalOpen, scrollToSection, setIsResumeModalOpen }) => {
   return (
@@ -15,7 +15,7 @@ const Hero = ({ profileMain, fallbackProfile, setIsContactModalOpen, scrollToSec
         <p className="max-w-2xl text-lg md:text-xl text-slate-400 mb-10 leading-relaxed mx-auto md:mx-0">
           Hi, I'm MD SIAM. <strong className="text-white">Senior WordPress Expert at <a href="https://buraqwebservice.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline decoration-blue-500/30 underline-offset-4 transition-colors">Buraq Web Services</a></strong> with 3+ years of experience. I build custom web solutions and smart n8n automations that help businesses save time and generate more leads.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
           <button 
             onClick={() => setIsContactModalOpen(true)}
             className="px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors flex items-center justify-center gap-2 font-fira"
@@ -34,6 +34,19 @@ const Hero = ({ profileMain, fallbackProfile, setIsContactModalOpen, scrollToSec
           >
             getCV() <Download size={18} />
           </button>
+        </div>
+
+        {/* Social Links */}
+        <div className="flex items-center gap-6 justify-center md:justify-start pt-4 border-t border-slate-800/50 w-fit">
+           <span className="text-slate-500 text-sm font-fira tracking-wider">FOLLOW_ME:</span>
+           <div className="flex items-center gap-4">
+              <a href="https://github.com/siamdev1" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-full transition-all border border-slate-700 hover:border-blue-500/30">
+                 <Github size={20} />
+              </a>
+              <a href="https://www.facebook.com/mdsiam2007" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-blue-500 rounded-full transition-all border border-slate-700 hover:border-blue-500/30">
+                 <Facebook size={20} />
+              </a>
+           </div>
         </div>
       </div>
       <div className="flex-1 flex justify-center md:justify-end">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Facebook, Github } from 'lucide-react';
 
 const Navbar = ({ isMenuOpen, toggleMenu, scrollToSection, setIsContactModalOpen, setIsMenuOpen }) => {
   return (
@@ -11,7 +11,7 @@ const Navbar = ({ isMenuOpen, toggleMenu, scrollToSection, setIsContactModalOpen
           </div>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 items-center">
+          <div className="hidden md:flex space-x-6 items-center">
             {['About', 'Services', 'Skills', 'Portfolio', 'Experience'].map((item) => (
               <button 
                 key={item} 
@@ -21,12 +21,21 @@ const Navbar = ({ isMenuOpen, toggleMenu, scrollToSection, setIsContactModalOpen
                 {item}
               </button>
             ))}
-            <button 
-              onClick={() => setIsContactModalOpen(true)}
-              className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm font-medium transition-colors font-fira"
-            >
-              Hire_Me()
-            </button>
+            
+            <div className="flex items-center gap-4 border-l border-slate-800 pl-6 ml-2">
+              <a href="https://github.com/siamdev1" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+                <Github size={18} />
+              </a>
+              <a href="https://www.facebook.com/mdsiam2007" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-500 transition-colors">
+                <Facebook size={18} />
+              </a>
+              <button 
+                onClick={() => setIsContactModalOpen(true)}
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm font-medium transition-colors font-fira"
+              >
+                Hire_Me()
+              </button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -51,9 +60,17 @@ const Navbar = ({ isMenuOpen, toggleMenu, scrollToSection, setIsContactModalOpen
                 {item}
               </button>
             ))}
+            <div className="flex items-center gap-4 px-3 py-2 border-t border-slate-700 mt-2">
+               <a href="https://github.com/siamdev1" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-sm">
+                  <Github size={18} /> GitHub
+               </a>
+               <a href="https://www.facebook.com/mdsiam2007" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-500 transition-colors flex items-center gap-2 text-sm">
+                  <Facebook size={18} /> Facebook
+               </a>
+            </div>
             <button
               onClick={() => { setIsContactModalOpen(true); setIsMenuOpen(false); }}
-              className="block w-full text-left px-3 py-2 text-base font-medium text-blue-400 hover:text-blue-300 hover:bg-slate-700 rounded-md font-fira"
+              className="block w-full text-left px-3 py-3 text-base font-medium text-blue-400 hover:text-blue-300 hover:bg-slate-700 rounded-md font-fira"
             >
               Contact()
             </button>
