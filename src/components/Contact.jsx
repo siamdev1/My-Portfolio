@@ -44,13 +44,6 @@ const Contact = ({
                       <input type="email" name="email" required className="w-full px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors" placeholder="hello@brand.com" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-slate-300 mb-1.5">Your Role (Hold Ctrl to select multiple)</label>
-                      <select name="role[]" multiple className="w-full px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg text-white focus:outline-none focus:border-blue-500 transition-colors min-h-[80px]">
-                        <option value="leader">Leader</option>
-                        <option value="follower">Follower</option>
-                      </select>
-                    </div>
-                    <div>
                       <label className="block text-sm font-medium text-slate-300 mb-1.5">How can I help you?</label>
                       <textarea name="message" required rows="4" className="w-full px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Describe your project, website needs, or automation goals..."></textarea>
                     </div>
@@ -107,13 +100,6 @@ const Contact = ({
                     <div>
                       <label className="block text-sm font-medium text-slate-300 mb-1 font-fira text-xs">email <span className="text-blue-500">=</span></label>
                       <input type="email" name="email" required className="w-full px-4 py-3 bg-slate-900/50 border border-slate-600 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors font-fira text-sm" placeholder='"hello@brand.com"' />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-slate-300 mb-1 font-fira text-xs">role_selection <span className="text-blue-500">=</span></label>
-                      <select name="role[]" multiple className="w-full px-4 py-2 bg-slate-900/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:border-blue-500 transition-colors font-fira text-sm min-h-[60px]">
-                        <option value="leader">Leader</option>
-                        <option value="follower">Follower</option>
-                      </select>
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-slate-300 mb-1 font-fira text-xs">message <span className="text-blue-500">=</span></label>
