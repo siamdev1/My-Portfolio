@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X, Facebook, Github } from 'lucide-react';
+import { Menu, X, Facebook, Github, Mail } from 'lucide-react';
 
 const Navbar = ({ isMenuOpen, toggleMenu, scrollToSection, setIsContactModalOpen, setIsMenuOpen }) => {
   return (
@@ -28,6 +28,9 @@ const Navbar = ({ isMenuOpen, toggleMenu, scrollToSection, setIsContactModalOpen
               </a>
               <a href="https://www.facebook.com/mdsiam2007" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-500 transition-colors">
                 <Facebook size={18} />
+              </a>
+              <a href="mailto:siam2007net@gmail.com" className="text-slate-400 hover:text-red-500 transition-colors" title="siam2007net@gmail.com">
+                <Mail size={18} />
               </a>
               <button 
                 onClick={() => setIsContactModalOpen(true)}
@@ -66,6 +69,9 @@ const Navbar = ({ isMenuOpen, toggleMenu, scrollToSection, setIsContactModalOpen
                </a>
                <a href="https://www.facebook.com/mdsiam2007" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-500 transition-colors flex items-center gap-2 text-sm">
                   <Facebook size={18} /> Facebook
+               </a>
+               <a href="mailto:siam2007net@gmail.com" className="text-slate-400 hover:text-red-500 transition-colors flex items-center gap-2 text-sm" title="siam2007net@gmail.com">
+                  <Mail size={18} /> Email
                </a>
             </div>
             <button

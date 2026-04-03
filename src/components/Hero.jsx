@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, Download, Facebook, Github } from 'lucide-react';
+import { ChevronRight, Download, Facebook, Github, Mail } from 'lucide-react';
 
 const Hero = ({ profileMain, fallbackProfile, setIsContactModalOpen, scrollToSection, setIsResumeModalOpen }) => {
   return (
@@ -45,6 +45,9 @@ const Hero = ({ profileMain, fallbackProfile, setIsContactModalOpen, scrollToSec
               </a>
               <a href="https://www.facebook.com/mdsiam2007" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-blue-500 rounded-full transition-all border border-slate-700 hover:border-blue-500/30">
                  <Facebook size={20} />
+              </a>
+              <a href="mailto:siam2007net@gmail.com" className="p-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-red-500 rounded-full transition-all border border-slate-700 hover:border-red-500/30" title="siam2007net@gmail.com">
+                 <Mail size={20} />
               </a>
            </div>
         </div>

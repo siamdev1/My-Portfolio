@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Github } from 'lucide-react';
+import { Facebook, Github, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -11,6 +11,9 @@ const Footer = () => {
           </a>
           <a href="https://www.facebook.com/mdsiam2007" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-500 transition-colors">
             <Facebook size={24} />
+          </a>
+          <a href="mailto:siam2007net@gmail.com" className="text-slate-400 hover:text-red-500 transition-colors" title="siam2007net@gmail.com">
+            <Mail size={24} />
           </a>
         </div>
         <p className="text-slate-500 text-sm font-fira">
