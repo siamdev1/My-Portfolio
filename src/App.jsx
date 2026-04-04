@@ -180,7 +180,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-blue-500/30">
+    <div className="min-h-screen bg-slate-900 print:bg-white text-slate-100 font-sans selection:bg-blue-500/30">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fira+Code:wght@400;500;600;700&display=swap');
         .font-fira { font-family: 'Fira Code', monospace; }
@@ -236,13 +236,6 @@ export default function App() {
 
         <Experience />
 
-        <Resume 
-          isResumeModalOpen={isResumeModalOpen} 
-          setIsResumeModalOpen={setIsResumeModalOpen} 
-          profileMain={profileMain} 
-          fallbackProfile={fallbackProfile} 
-        />
-
         <Contact 
           formStatus={formStatus} 
           setFormStatus={setFormStatus} 
@@ -254,6 +247,13 @@ export default function App() {
 
         <Footer />
       </div>
+
+      <Resume 
+        isResumeModalOpen={isResumeModalOpen} 
+        setIsResumeModalOpen={setIsResumeModalOpen} 
+        profileMain={profileMain} 
+        fallbackProfile={fallbackProfile} 
+      />
     </div>
   );
 }
