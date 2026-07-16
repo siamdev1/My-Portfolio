@@ -1,6 +1,6 @@
 # MD SIAM - WordPress & Automation Portfolio
 
-Professional portfolio website for MD SIAM, a Senior WordPress Expert and Automation Specialist.
+Professional portfolio website for MD SIAM, a WordPress Expert and Automation Specialist.
 
 ## Tech Stack
 

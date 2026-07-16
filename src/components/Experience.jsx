@@ -6,13 +6,13 @@ const Experience = () => {
     <section id="experience" className="py-20 bg-slate-800/30">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold mb-12 text-center">Professional Background</h2>
-        
+
         <div className="space-y-8">
           {/* Experience 1 - Highlighted */}
           <div className="relative pl-8 md:pl-0">
             <div className="md:flex items-center justify-between mb-2">
               <h3 className="text-xl font-bold text-white flex items-center gap-2 flex-wrap">
-                Senior WordPress Expert 
+                WordPress Expert
                 <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded-full border border-blue-500/20">Primary Role</span>
               </h3>
               <span className="text-blue-400 text-sm font-medium mt-2 md:mt-0 inline-block">3+ Years (Present)</span>

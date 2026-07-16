@@ -180,7 +180,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-blue-500/30">
+    <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fira+Code:wght@400;500;600;700&display=swap');
         .font-fira { font-family: 'Fira Code', monospace; }
@@ -198,7 +198,7 @@ export default function App() {
         }
       `}</style>
       
-      <div className="no-print">
+      <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-blue-500/30 no-print">
         <Navbar 
           isMenuOpen={isMenuOpen} 
           toggleMenu={toggleMenu} 
@@ -254,6 +254,6 @@ export default function App() {
 
         <Footer />
       </div>
-    </div>
+    </>
   );
 }
